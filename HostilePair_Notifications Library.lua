@@ -293,4 +293,12 @@ do
     Notifications = NotificationManager
 end
 
+cheat.register("onUpdate", function()
+    Notifications:update()
+end)
+
+cheat.register("onPaint", function()
+    Notifications:paint()
+end)
+
 return Notifications
