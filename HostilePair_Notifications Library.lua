@@ -291,14 +291,14 @@ do
     end
     
     Notifications = NotificationManager
+    cheat.register("onUpdate", function()
+        Notifications:update()
+    end)
+    
+    cheat.register("onPaint", function()
+        Notifications:paint()
+    end)
 end
 
-cheat.register("onUpdate", function()
-    Notifications:update()
-end)
-
-cheat.register("onPaint", function()
-    Notifications:paint()
-end)
-
 return Notifications
+
