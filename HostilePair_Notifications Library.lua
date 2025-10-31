@@ -248,7 +248,7 @@ do
     function NotificationManager:paint()
         local screen_w, screen_h = cheat.getWindowSize()
         local base_x = screen_w - 50
-        local stacking_y = screen_h
+        local stacking_y = 50
         self.stack_bottom_y = stacking_y
 
         -- Draw each active notification and calculate its stacked position
@@ -301,5 +301,6 @@ do
 end
 
 return Notifications
+
 
 
